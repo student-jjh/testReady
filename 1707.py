@@ -38,6 +38,9 @@ for i in range(K):
     for i in range(1, V + 1):
         if(color[i] == 0):
             result = bfs(i)
+        if result == False:
+            break
+            
     if result:
         print("YES")
     else:
